@@ -1,0 +1,374 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bagTitle {
+    border-top: 1px solid #e5e5e5;
+    padding-left: 80px;
+    margin-bottom: 30px;
+}
+
+.bagTitle, .breadCrumbs {
+    border-bottom: 1px solid #e5e5e5;
+}
+.titleShoppingBag {
+    font-family: "OpenSansBold";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.78px;
+}
+
+.shoppingBag .container{
+    padding: 0 60px;
+}
+
+.priceBlock{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.discountBlock,
+.totalBlock{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.discountTitle{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    color: #f14a58;
+    padding-right: 10px;
+}
+
+.discountCost{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    color: #f14a58;
+}
+
+.totalTitle {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.66px;
+    padding-right: 10px;
+}
+
+.totalCost {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+}
+
+.rowBuy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+
+.thanks, .empty {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    font: 30px/65px 'OpenSansBold';
+    color: #f14a58;
+}
+
+.emptyBag {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.39px;
+    text-align: center;
+}
+
+.totalBlock{
+    margin-top: 13px;
+}
+
+.infoBag {
+    font-family: "OpenSansBold";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    background-color: #f7f7f7;;
+    -webkit-box-shadow: inset 1px 1px 0 #e5e5e5;;
+    box-shadow: inset 1px 1px 0 #e5e5e5;
+    text-align: center;
+    padding: 14px 0;
+    margin-top: 26px;
+}
+
+.nextday{
+    color: #f14a58;
+}
+.thanks{
+    margin-left: 28%;
+}
+.empty{
+    margin-left: 12%;
+}
+.shopItems{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.shoppingBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 91px;
+}
+.shopOptions{
+    width: 31.6%;
+}
+
+.titleProduct {
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.productBag {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+}
+
+.optionBag {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    margin-top: 13px;
+}
+
+.removeItem {
+    font: 13px 'OpenSansBold';
+    color: #f14a58;
+    cursor: pointer;
+    margin-top: 34px;
+}
+
+.priceBag {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+.item-image{
+    width: 62%;
+}
+/*.item-image .viewCover {*/
+/*    opacity: 0;*/
+/*    background: rgba(0, 0, 0, 0.51);*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    -webkit-transition: 0.5s;*/
+/*    -o-transition: 0.5s;*/
+/*    transition: 0.5s;*/
+/*}*/
+.quickView {
+    color: #f14a58;
+    padding-top: 23%;
+    padding-left: 35%;
+    line-height: 230px;
+    font-family: "OpenSansBold";
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.66px;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .bagTitle{
+        padding-left: 50px;
+    }
+
+    .shoppingBag .container {
+        padding: 0 40px;
+    }
+    .titleShoppingBag {
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+
+    .infoBag {
+        font-size: 11px;
+        letter-spacing: 0.33px;
+        margin-top: 16px;
+    }
+    .totalTitle,
+    .totalCost{
+        font-size: 20px;
+    }
+    .add-to-bag {
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        width: 261px;
+        height: 70px;
+    }
+
+    .clearBag{
+        width: 25%;
+    }
+    .priceBag{
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+
+    .removeItem{
+        margin-top: 15px;
+    }
+    .item-image .viewCover {
+        bottom: 45px;
+    }
+    .quickView {
+        padding-left: 25%;
+        line-height: 150px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .shopItems{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .shoppingBlock{
+        width: 100%;
+        margin-bottom: 42px;
+    }
+    .rowBuy{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 19px;
+    }
+    .clearBag{
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    .priceBlock{
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .bagTitle{
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+
+    .shoppingBag .container {
+        padding: 0 20px;
+    }
+    .titleShoppingBag {
+        font-size: 18px;
+        letter-spacing: 0.54px;
+    }
+
+    .infoBag {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        margin-top: 12px;
+    }
+    .totalTitle{
+        font-size: 16px;
+    }
+    .totalCost{
+        font-size: 18px;
+    }
+    .totalBlock{
+        margin-bottom: 16px;
+    }
+    .add-to-bag {
+        font-size: 18px;
+        letter-spacing: 0.6px;
+        padding-top: 22px;
+        width: 220px;
+        height: 62px;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-bottom: 20px
+    }
+
+    .priceBag{
+        font-size: 14px;
+        margin-bottom: 34px;
+    }
+    .productBag{
+        font-size: 12px;
+    }
+    .optionBag{
+        font-size: 10px;
+    }
+
+    .removeItem{
+        font-size: 11px;
+        letter-spacing: 0.33px;
+        margin-top: 31px;
+    }
+
+    .discountTitle{
+        font-size: 12px;
+    }
+    .discountCost{
+        font-size: 14px;
+    }
+    .item-image .viewCover {
+        bottom: 80px;
+    }
+    .quickView {
+        padding-left: 25%;
+        line-height: 130px;
+    }
+}

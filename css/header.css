@@ -1,0 +1,333 @@
+@font-face {
+	font-family: TimesNewRomanItalic;
+	src: url(../fonts/TimesNewRomanItalic.ttf);
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+	font-family: OpenSansBold;
+	src: url(../fonts/OpenSansBold.ttf);
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+body {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #f14a58;
+}
+
+a.active {
+	color: #f14a70;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+.rowTopBar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 22px;
+}
+
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	max-width: 1300px;
+}
+
+.logo {
+	font-family: "OpenSansBold", serif;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 0.9px;
+
+}
+
+.logo:hover {
+	color: #000;
+}
+
+.logoBlock {
+
+}
+
+.logInBlock {
+}
+
+.signUp,
+.bag {
+	font-family: Roboto, serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.36px;
+
+}
+
+.bag:before {
+	content: url('../img/ico_bag.png');
+	margin-right: 15px;
+}
+
+.bag {
+	margin-left: 56px;
+}
+
+.logoMobile {
+	display: none;
+}
+.nav{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 24px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-right: 110px;
+}
+
+.menu li a {
+	font-family: "OpenSansBold", serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.39px;
+}
+
+.menu li a.activeLink {
+	color: #f14a58;
+}
+
+.menu li a:hover {
+	color: #f14a58;
+}
+.search {
+	/*width: 10%;*/
+	position: relative;
+}
+.searchForm {
+
+}
+
+.searchForm:after {
+	content: '';
+	background: #e5e5e5;
+	height: 2px;
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	width: 100%;
+}
+
+.search input {
+	width: 85%;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #a8a8a8;
+	font-family: "OpenSansBold";
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.36px;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+.search button {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	background: none;
+	border: none;
+}
+
+header .openSearch {
+	clear: both;
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+
+header .display {
+	display: block;
+}
+
+.display {
+	display: block;
+}
+
+.openSearch .searchButton img {
+	display: none;
+}
+
+.openSearch .searchButton:after {
+	content: 'X';
+	color: #757575;
+}
+
+.openMenu .iconMenu {
+	width: 15px;
+	height: 15px;
+	display: block;
+	margin-top: 26px;
+	background: url("../img/ico_close.png") top center;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.openMenu .mobileMenu {
+	border-left: 1px solid transparent;
+}
+.iconMenu {
+	width: 14px;
+	height: 12px;
+	display: block;
+	margin-top: 26px;
+	background: url("../img/ico_menu.png") top center;
+}
+.containerHeader, .top-footer, .bottom-footer {
+	padding: 0 60px;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.containerHeader{
+		padding: 0 40px;
+	}
+	.menu{
+		margin-right: 54px;
+	}
+	.logo{
+		font-size: 26px;
+	}
+	.menu li a {
+		font-size: 12px;
+	}
+	.searchForm{
+		display: none;
+	}
+	.search button{
+		top: 2px;
+	}
+}
+
+@media screen and (min-width:375px) and (max-width: 767px){
+	.containerHeader{
+		padding: 0 20px;
+	}
+	.rowTopBar{
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100%;
+	}
+	.logoBlock,
+	.logInBlock{
+		margin-top: 24px;
+		/*margin-bottom: 22px;*/
+	}
+	.logo, .signUp, .bag img{
+		display: none;
+	}
+	.logoMobile {
+		display: block;
+		font-family: "OpenSansBold", serif;
+		font-size: 24px;
+	}
+
+	.hideMobile {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: block;
+		width: 10%;
+		text-align: left;
+		padding-right: 0;
+		padding-left: 4vw;
+		border-left: 1px solid #e5e5e5;
+		height: 66px;
+	}
+
+	.menu li a {
+		font-family: "OpenSansBold";
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 60px;
+		letter-spacing: 0.72px;
+
+	}
+	.logoBlock{
+		margin-right: 145px
+	}
+	.bag{
+		margin-left: 0;
+	}
+	.search {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.menu{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-bottom: 76px;
+	}
+	.nav{
+		border-top: 1px solid #e5e5e5;
+		width: 110%;
+		margin-left: -20px;
+	}
+
+	.searchForm:after{
+		margin-left: 20px;
+		width: 90%;
+	}
+	.menu,
+	.search{
+		padding-left: 20px;
+	}
+}
+
+
+
+
+
