@@ -222,7 +222,7 @@ header .display {
 	margin-top: 26px;
 	background: url("../img/ico_menu.png") top center;
 }
-.containerHeader, .top-footer, .bottom-footer {
+.containerHeader{
 	padding: 0 60px;
 }
 
@@ -249,7 +249,7 @@ header .display {
 	}
 }
 
-@media screen and (min-width:375px) and (max-width: 767px){
+@media screen and  (max-width: 767px){
 	.containerHeader{
 		padding: 0 20px;
 	}

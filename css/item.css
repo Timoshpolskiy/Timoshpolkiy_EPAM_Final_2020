@@ -341,7 +341,7 @@ a.messageAboutChoice {
 
 }
 
-@media screen and (min-width:375px) and (max-width:767px) {
+@media screen and (max-width:767px) {
 	.item-page{
 		padding: 0 20px;
 		-webkit-box-orient: vertical;

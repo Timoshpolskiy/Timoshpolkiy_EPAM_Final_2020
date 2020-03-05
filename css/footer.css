@@ -1,3 +1,7 @@
+.top-footer,
+.bottom-footer {
+	padding: 0 60px;
+}
 .footer-mobile {
 	display: none;
 }
@@ -228,9 +232,13 @@ li {
 	.social{
 		padding-top: 30px;
 	}
+	.bottom-footer,
+	.top-footer{
+		padding: 0 40px	;
+	}
 }
 
-@media screen and (min-width:375px) and (max-width:767px) {
+@media screen and (max-width:767px) {
 	.top-footer-container,
 	.bottom-footer{
 		display: none;
